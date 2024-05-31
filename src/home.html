@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>H.C.E.T Syndicate Agency Portal</title>
+    <link rel="shortcut icon" href="images\H.C.E.T_Syndicate_Icon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+
+</head>
+<body>
+    <h1>Welcome to the H.C.E.T Syndicate Agency Portal</h1>
+    <nav>
+        <ul>
+            <li><a href="#manageMission" data-animate="scrolling"> Manage Missions</a></li>
+            <li><a href="#mission" data-animate="scrolling"> Mission Logs</a></li>
+            <li><a href="#adminPortal" data-animate="scrolling"> Admin Portal</a></li>
+            <li><a href="login.html" data-animate="scrolling"> Logout</a></li>
+        </ul>
+    </nav>
+    <h1 id="manageMission">Manage Missions</h1>
+    <form id="missionForm">
+        <input type="text" id="missionName" placeholder="Mission Name" required>
+        <input type="text" id="description" placeholder="Description" required>
+        <input type="text" id="agents" placeholder="Agent Usernames (comma-separated)" required>
+        <button type="submit">Start Mission</button>
+    </form>
+
+    <h2>Current Mission</h2>
+    <div id="currentMission">
+        <p>No ongoing mission</p>
+    </div>
+
+    <h3>Add/Remove Agents</h3>
+    <form id="modifyAgentsForm">
+        <input type="text" id="modifyAgents" placeholder="Agent Usernames (comma-separated)">
+        <button type="button" id="addAgentsBtn">Add Agents</button>
+        <button type="button" id="removeAgentsBtn">Remove Agents</button>
+    </form>
+
+    <h3>Mission Actions</h3>
+    <button class="missionActionBtn" id="missionBtn">Impose Emergency</button>
+    <button class="missionActionBtn" id="notifyAgentsBtn">Notify Agents</button>
+    <button class="missionActionBtn" id="changeDetailsBtn">Change Mission Details</button>
+
+    <button class="missionActionBtn" id="endMissionBtn">End Mission</button>
+    <hr>
+    <hr>
+    <h1 id="mission">Mission Logs</h1>
+    <ul id="missionLogs"></ul>
+    <hr>
+    <hr>
+    <h1 id="adminPortal">Admin Portal</h1>
+    <h2>Current Agents</h2>
+    <ul id="currentAgents"></ul>
+
+
+
+
+    <script src="js/script.js"></script>
+</body>
+</html>

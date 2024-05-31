@@ -1,0 +1,166 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+h1, h2, h3 {
+    color: #ABC8C0;
+    text-align: center;
+}
+
+form {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: transparent;
+    backdrop-filter: blur(20px);
+}
+
+input, button {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+form input[type="text"], form input[type="password"] {
+    width: calc(100% - 22px); 
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+form button {
+    padding: 15px;
+    background-color: #9EE493;
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+form button:hover {
+    background-color: #70566D;
+}
+nav ul {
+    background-color: #444054;
+    overflow: hidden;
+    color: white;
+    padding: 0;
+    text-align: center;
+    margin: 0;
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    padding: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+    display: inline-block;
+}
+
+nav ul li a:hover {
+    background-color: #6a6483;
+}
+
+.missionActionBtn {
+    background-color: #fa3224;
+    color: rgb(255, 255, 255);
+    border: none;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 5px;
+    width: 30vw;
+    display: flex;
+    justify-content: center;
+    margin: 20px auto;
+    font-size: larger;
+}
+
+#missionActionBtn:hover {
+    background-color: #d12b1b;
+}
+
+#missionLogs, #ongoingMissions, #currentAgents {
+    max-width: 600px;
+    margin: 20px auto;
+    list-style-type: none;
+    padding: 0;
+}
+
+#missionLogs li, #ongoingMissions li, #currentAgents li {
+    background-color: #fff;
+    margin: 10px 0;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-left: 5px solid #4CAF50;
+}
+
+#missionLogs li ul, #ongoingMissions li ul {
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+#missionLogs li ul li, #ongoingMissions li ul li {
+    padding-left: 10px;
+    border-left: 3px solid #ddd;
+}
+#adminPortal h2 {
+    text-align: center;
+    color: #333;
+}
+
+#ongoingMissions, #currentAgents {
+    max-width: 700px;
+    margin: 20px auto;
+    padding: 0;
+    list-style-type: none;
+}
+
+#ongoingMissions li, #currentAgents li {
+    background-color: #fff;
+    margin: 10px 0;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-left: 5px solid #4CAF50;
+}
+
+#currentMission {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 600px) {
+    nav ul li {
+        display: block;
+        text-align: left;
+    }
+
+    form, #missionLogs, #ongoingMissions, #currentAgents {
+        width: 90%;
+        margin: 10px auto;
+    }
+}
