@@ -183,7 +183,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     
 
-    // Display mission logs
     if (missionLogs) {
         const missions = JSON.parse(localStorage.getItem('missions') || '[]');
         missions.forEach(mission => {
