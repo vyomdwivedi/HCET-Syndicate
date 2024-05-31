@@ -87,6 +87,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 localStorage.setItem('currentMission', JSON.stringify(currentMission));
                 alert('Agents added successfully.');
                 displayCurrentMission();
+                location.reload();
             } else {
                 alert('No ongoing mission to add agents to.');
             }
@@ -101,6 +102,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 localStorage.setItem('currentMission', JSON.stringify(currentMission));
                 alert('Agents removed successfully.');
                 displayCurrentMission();
+                location.reload();
             } else {
                 alert('No ongoing mission to remove agents from.');
             }
